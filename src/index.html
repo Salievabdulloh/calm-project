@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +23,9 @@
         </div>
         <div class="flex justify-center p-10 tab:items-center tab:mt-[120px] flex-col">
             <div class="tab:mr-[600px]"><img src="img/c.png"></div>
-            <p class="text-[24px] tab:w-[664px] text-[#353732] mt-[17px]">Welcome to Calm – a lifestyle blog about
+            <p class="text-[24px] tab:text-[36px] tab:w-[664px] text-[#353732] mt-[17px]">Welcome to Calm – a lifestyle
+                blog
+                about
                 minimalism,
                 technology,
                 design & travel.</p>
@@ -29,7 +34,7 @@
 
     <main class="bg-[#FAFAFA] py-[100px] tab:px-[336px]">
         <div class="">
-            <div class="flex gap-[17px]">
+            <div class="tab:flex gap-[17px]">
                 <div class="pb-[29px] bg-white rounded-lg">
                     <img src="img/mount.png">
                     <div class="pl-[20px] pt-[17px] tab:w-[465px]">
@@ -44,9 +49,9 @@
                         <p class="text-[11px] text-[#353732]">November 24, 2021</p>
                     </div>
                 </div>
-                <div class="">
+                <div class="flex tab:block flex-col items-center">
                     <div class="pb-[29px] bg-white w-[245px] rounded-lg">
-                        <img src="img/climb.png">
+                        <img src="img/climb.png" class="w-[100%] tab:w-[inherit]">
                         <div class="pl-[20px] pt-[17px] tab:w-[465px]">
                             <p class="text-[#353732] text-[12px]">Exercise</p>
                             <p class="text-[#353732] py-[9px] text-[18px]">Climbing as exercise</p>
@@ -63,6 +68,70 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="tab:flex my-[16px] gap-[16px]">
+                <div class="pb-[29px] bg-white rounded-lg">
+                    <img src="img/quarosped.png" class="w-[100%]">
+                    <div class="pl-[20px] pt-[17px]">
+                        <p class="text-[#353732] text-[12px]">TECH</p>
+                        <p class="text-[#353732] py-[10px] text-[17px]">Drone photography on a space budget</p>
+                        <p class="text-[11px] text-[#353732]">November 24, 2021</p>
+                    </div>
+                </div>
+                <div class="pb-[29px] bg-white rounded-lg">
+                    <img src="img/people.png" class="w-[100%]">
+                    <div class="pl-[20px] pt-[17px]">
+                        <p class="text-[#353732] text-[12px]">Tutorial</p>
+                        <p class="text-[#353732] py-[10px] text-[17px]">How to make the perfect cup of coffee</p>
+                        <p class="text-[11px] text-[#353732]">November 24, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col tab:flex-row items-center my-[16px] gap-[16px]">
+                <div class="pb-[29px] bg-white rounded-lg">
+                    <img src="img/pen.png">
+                    <div class="pl-[20px] pt-[17px]">
+                        <p class="text-[#353732] text-[12px]">Review</p>
+                        <p class="text-[#353732] py-[10px] mb-[20px] text-[17px]">The best pen I've ever used</p>
+                        <p class="text-[11px] text-[#353732]">November 24, 2021</p>
+                    </div>
+                </div>
+                <div class="pb-[29px] bg-white rounded-lg">
+                    <img src="img/backpack.png">
+                    <div class="pl-[20px] pt-[17px]">
+                        <p class="text-[#353732] text-[12px]">Review</p>
+                        <p class="text-[#353732] py-[10px] text-[17px]">Tech-focused travel backpack</p>
+                        <p class="text-[11px] text-[#353732]">November 24, 2021</p>
+                    </div>
+                </div>
+                <div class="pb-[29px] bg-white rounded-lg">
+                    <img src="img/tv.png">
+                    <div class="pl-[20px] pt-[17px]">
+                        <p class="text-[#353732] text-[12px]">Review</p>
+                        <p class="text-[#353732] py-[10px] text-[17px] w-[179px]">Desk accessories to keep you organized
+                        </p>
+                        <p class="text-[11px] text-[#353732]">November 24, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pl-[20px] py-[50px] tab:py-[100px] flex items-center tab:flex-row flex-col gap-[16px]">
+            <div class="">
+                <p class="text-[#353732] text-[28px]">Stay in the know.</p>
+                <p class="text-[#353732] mt-[11px] leading-[22.4px]">Sign-up to my newsletter to get an update whenever
+                    I post a new
+                    article. I try
+                    to be very mindful of not spamming my subscribers.</p>
+            </div>
+            <div class="">
+                <label for="this">Name</label>
+                <input type="text"
+                    class="bg-[#52503B05] pl-[20px] pr-[130px] tab:pr-[203px] rounded-lg border-[#E5E7EB] border-[3px] py-[15px]">
+                <label for="this" class="mt-[10px]">Email Address</label>
+                <input type="text"
+                    class="bg-[#52503B05] pl-[20px] pr-[130px] tab:pr-[203px] rounded-lg border-[#E5E7EB] border-[3px] py-[15px]">
+                <button class="bg-[#353732] w-[82px] h-[38px] rounded-md mt-[10px]"></button>
             </div>
         </div>
     </main>
